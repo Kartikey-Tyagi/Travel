@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency | Explore the World</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Travel Agency</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: url('images/travel1.avif');"></div>
+                <div class="carousel-item" style="background-image: url('images/travel6.avif');"></div>
+                <div class="carousel-item" style="background-image: url('images/travel7.avif');"></div>
+                <div class="carousel-item" style="background-image: url('images/travel4.avif');"></div>
+            </div>
+        </div>
+        
+        <!-- Persistent Hero Content -->
+        <div class="hero-content">
+            <h1>Explore The World</h1>
+            <p>Your dream destinations await</p>
+            <a href="#packages" class="btn btn-primary">View Packages</a>
+        </div>
+    </header>
+
+    <!-- Packages Section -->
+    <section id="packages" class="container my-5 text-center" data-aos="fade-up">
+        <h2>Our Travel Packages</h2>
+        <div class="package-slider">
+            <div class="package">
+                <img src="images/switzerland.avif" alt="Switzerland">
+                <h3>Switzerland</h3>
+                <p>Explore the breathtaking Swiss Alps and scenic beauty.</p>
+            </div>
+            <div class="package">
+                <img src="images/paris.avif" alt="Paris">
+                <h3>Paris</h3>
+                <p>Visit the romantic city of Paris and the Eiffel Tower.</p>
+            </div>
+            <div class="package">
+                <img src="images/bali.avif" alt="Bali">
+                <h3>Bali</h3>
+                <p>Enjoy the tropical paradise with beaches and temples.</p>
+            </div>
+            <div class="package">
+                <img src="images/dubai.avif" alt="Dubai">
+                <h3>Dubai</h3>
+                <p>Experience luxury, skyscrapers, and desert safaris.</p>
+            </div>
+            <div class="package">
+                <img src="images/japan.avif" alt="Japan">
+                <h3>Japan</h3>
+                <p>Explore cherry blossoms, temples, and advanced technology.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container my-5 text-center" data-aos="fade-up">
+        <h2>About Us</h2>
+        <p>We are a premium travel agency dedicated to making your travel dreams a reality. Explore stunning destinations with our customized packages.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center">Contact Us</h2>
+        <form id="contactForm" class="mt-4" data-aos="fade-up">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" class="form-control" rows="4" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <p>© 2024 Travel Agency. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
